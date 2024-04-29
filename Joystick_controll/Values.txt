@@ -1,0 +1,5 @@
+X left= 0 
+X Right = 900 - 1100
+Y UP = 0
+Y Down=900 - 1000
+Button pressed = 0
