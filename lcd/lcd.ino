@@ -5,14 +5,20 @@ LiquidCrystal_I2C lcd(0x27,16,2);  // set the LCD address to 0x3F for a 16 chars
 void setup() {
   lcd.init();
   lcd.clear();         
-  lcd.backlight();      // Make sure backlight is on
-  // Print a message on both lines of the LCD.
+  lcd.backlight();      
+ 
   delay(1000);
-  lcd.setCursor(0,0);   //Set cursor to character 2 on line 0
+  lcd.setCursor(0,0);    
   lcd.print("Hello world!");
   
-  lcd.setCursor(0,1);   //Move cursor to character 2 on line 1
+  lcd.setCursor(0,1);   
   lcd.print("LCD Tutorial");
+  delay(5000);
+
+
+ lcd.setCursor(0,0); 
+lcd.clear();
+  lcd.print("said Abbas");
   
 }
 
